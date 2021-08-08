@@ -1,13 +1,7 @@
-import math
-
 import numpy as np
 import matplotlib.pyplot as plt
 
-def poisson(_lambda, k):
-    k = int(k)
-    prob = (_lambda ** k) * (math.exp(-1 * _lambda)) / math.factorial(k)
-    
-    return prob
+from util import poisson
 
 
 # 1.平均(λ)が3.56のポアソン分布の描画
